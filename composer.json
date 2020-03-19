@@ -1,4 +1,6 @@
 {
+    "name" : "apolinux/xmltoxpath" ,
+    "description" : "tool to convert XML file into an array list of xpath",
     "require": {
         "phpunit/phpunit": "^9.0"
     }
