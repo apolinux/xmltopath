@@ -5,6 +5,7 @@
     ,"autoload": {
         "psr-4": {
             "Percasoft\\": "src/"
-        }
+        },
+    "bin": ["bin/xmltopath"]
     }
 }
