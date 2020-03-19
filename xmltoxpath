@@ -4,7 +4,7 @@
 $autoload=false;
 foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.php', __DIR__ . '/vendor/autoload.php') as $file) {
     if (file_exists($file)) {
-        $autoload=true;
+        $autoload=$file;
         break;
     }
 }
@@ -12,6 +12,8 @@ foreach (array(__DIR__ . '/../../autoload.php', __DIR__ . '/../vendor/autoload.p
 if(! $autoload){
     die("The autoload file could not be loaded. Check your composer directory". PHP_EOL) ;
 }
+
+require_once $autoload;
 
 if ($argc < 2){
     die("Usage: " . basename($argv[0]) . " xmlfile [ u ]" .PHP_EOL .
