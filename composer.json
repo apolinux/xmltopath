@@ -9,5 +9,5 @@
             "Percasoft\\": "src/"
         }
     },
-    "bin": ["bin/xmltoxpath"]
+    "bin": ["xmltoxpath"]
 }
